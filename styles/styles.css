@@ -5,37 +5,67 @@
 
 .select {
     display:flex;
+    padding: 5px;
+    justify-content: center;
+    gap:15px;
+    background-color: rgb(28, 4, 83, 0.5);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 section {
     display: grid;
-    grid-template-columns: max-content 1fr 1fr;
+    grid-template-columns: max-content 1fr;
     grid-template-rows: auto auto max-content;
+
+    grid-template-areas:
+        "img heading  "
+        "img paragraaf"
+        "img button   ";
+
+    background-color: rgb(28, 4, 83, 0.5);
+    column-gap:1em;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+section:nth-of-type(even) {
+    grid-template-columns: 1fr max-content;
+
+    grid-template-areas:
+        "heading   img"
+        "paragraaf img"
+        "button    img";
 }
 
 img {
-    grid-row-start: 1;
-    grid-row-end: 4;
+    grid-area:img;
     margin: 5px
 }
 
+
+
 h2 {
     margin: 15px 0 0 10px;
-    
+    grid-area: heading;
 }
 
 p {
     margin: 0 0 0 10px;
-    grid-column: 2;
+    grid-area: paragraaf;
 }
 
 .meer {
-    margin: 0 0 0 60px;
-    grid-column: 3;
-    grid-row: 3;
+    grid-area: button;
+    justify-self:end;
+    align-self: end;
     border: solid black 2px;
     border-radius: 5px;
     width: fit-content;
     height: fit-content;
     padding:0.3em;
+    text-decoration: none;
+    color: black;
 }
