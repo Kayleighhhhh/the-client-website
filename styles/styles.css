@@ -3,8 +3,8 @@
     box-sizing: border-box;
 }
 
-select {
-    
+.select {
+    display:flex;
 }
 
 section {

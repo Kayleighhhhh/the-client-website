@@ -16,15 +16,21 @@
         </nav>
     </header>
     <main>
-        <div>
-            <select aria-placeholder="Filter">
+        <div class="select">
+            <select name="Filter">
                 <optgroup label="Auteur">
                     <option>naam1</option>
                     <option>naam2</option>
                 </optgroup>
-                <optgroup value="Gedigitaliseerde publicaties">Gedigitaliseerde publicaties</optgroup>
-                <optgroup value="Jaar">Jaar</optgroup>
-                <optgroup value="Plaats van publicatie">Plaats van publicatie</optgroup>
+                <option label="Gedigitaliseerde publicaties" style="font-weight: bold;"></option>
+                <optgroup label="Jaar">
+                    <option>jaar 1</option>
+                    <option>jaar 2</option>
+                </optgroup>
+                <optgroup label="Plaats van publicatie">
+                    <option>plaats 1</option>
+                    <option>plaats 2</option>
+                </optgroup>
             </select>
             <search>
                 <input type="search">
