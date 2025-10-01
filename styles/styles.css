@@ -3,6 +3,34 @@
     box-sizing: border-box;
 }
 
+body {
+    margin:0;
+    padding:1em;
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+    gap:1em;
+}
+
+
+/**********/
+/* HEADER */
+/**********/
+
+header img {
+
+}
+
+
+
+/********/
+/* MAIN */
+/********/
+
+/* section met dropdowns */
+
 .select {
     display:flex;
     padding: 5px;
@@ -10,32 +38,47 @@
     gap:15px;
     background-color: rgb(28, 4, 83, 0.5);
     padding: 10px;
-    margin: 10px;
+    /* margin: 10px; */
     border-radius: 10px;
 }
 
 .filter {
+    width:0;
+    flex-grow:1;
     border-radius: 5px;
     border: 1.8px black solid;
 }
 
 .search {
+    width:0;
+    flex-grow:1;
     border-radius: 5px;
     border-color: black ;
     
 }
 
-section {
-    display: flex;
-    flex-wrap: wrap;
 
-    justify-content: center;
-    align-items: center;
+/* lijst met artikelen */
+
+section {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+
+    /* justify-content: center; */
+    /* align-items: center; */
+
+    display:grid;
+    gap:1em;
+
+    @media (min-width: 700px) {
+        grid-template-columns: 1fr 1fr;
+
+    }
 }
 
 article {
     display: grid;
-    grid-template-columns: max-content 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto max-content;
 
     grid-template-areas:
@@ -46,28 +89,41 @@ article {
     background-color: rgb(28, 4, 83, 0.5);
     column-gap:1em;
     padding: 10px;
-    margin: 10px;
     border-radius: 10px;
 
-    width: clamp(30rem, 40rem, 61.9rem);
+    &:nth-of-type(even) {
+
+        grid-template-areas:
+            "heading   img"
+            "paragraaf img"
+            "button    img";
+    }
+
+    @media (min-width: 700px) {
+        &:nth-of-type(4n + 1),
+        &:nth-of-type(4n + 2) {
+            grid-template-areas:
+            "img heading  "
+            "img paragraaf"
+            "img button   ";
+        }
+
+        &:nth-of-type(4n + 3),
+        &:nth-of-type(4n + 4) {
+            grid-template-areas:
+            "heading   img"
+            "paragraaf img"
+            "button    img";
+        }
+    }
 }
 
-article:nth-of-type(even) {
-    grid-template-columns: 1fr max-content;
 
-    grid-template-areas:
-        "heading   img"
-        "paragraaf img"
-        "button    img";
-}
 
-img {
+main img {
     grid-area:img;
-    margin: 5px;
-    width: 300px;
+    width:100%;
 }
-
-
 
 h2 {
     margin: 15px 0 0 10px;
