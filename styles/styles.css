@@ -25,6 +25,14 @@
     
 }
 
+section {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+}
+
 article {
     display: grid;
     grid-template-columns: max-content 1fr;
@@ -41,8 +49,7 @@ article {
     margin: 10px;
     border-radius: 10px;
 
-    min-width: 25rem;
-    max-width: 30rem;
+    width: clamp(30rem, 40rem, 61.9rem);
 }
 
 article:nth-of-type(even) {
