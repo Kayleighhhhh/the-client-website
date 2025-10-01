@@ -64,7 +64,7 @@ article:nth-of-type(even) {
 img {
     grid-area:img;
     margin: 5px;
-    width:250px;
+    width: 200px;
 }
 
 
