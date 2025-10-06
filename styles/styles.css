@@ -21,6 +21,10 @@ main {
 
 header {
     background-color: rgb(0, 38, 70);
+    display: flex;
+    justify-content: center;
+    margin: 0 0 1em;
+    border-radius: 10px;
 }
 
 

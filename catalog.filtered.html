@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="HTML, CSS, JavaScript, Embassy of the Free Mind, Catalog">
+        <meta name="description" content="catalog voor Embassy of the free mind">
+        <title>Catalog</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <script src="scripts/script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1><img src="./assets/efmlogo.png" class="logo" width="150" alt="logo Embassy of the free Mind"></h1>
+            <img src="">
+            <nav>
+
+            </nav>
+        </header>
+
+        <main>
+            <form class="select" action="catalog.html">
+                <select name="Filter" class="filter">
+                    <option value="">-Filter-</option>
+                    <hr />
+                    <optgroup label="Auteur">
+                        <option value="Westcott">Westcott</option>
+                        <option value="Boehme">Boehme</option>
+                        <option value="anonymous">anonymous</option>
+                        <option value="Nagel">Nagel</option>
+                        <option value="Blount">Blount</option>
+                        <option value="Murr">Murr</option>
+                        <option value="Oetinger">Oetinger</option>
+                        <option value="Tollius">Tollius</option>
+                        <option value="Drusius">Drusius</option>
+                        <option value="More">More</option>
+                        <option value="Hortulanus">Hortulanus</option>
+                    </optgroup>
+                    <hr />
+                    <option label="Gedigitaliseerde publicaties" style="font-weight: bold;"></option>
+                    <hr />
+                    <optgroup label="Jaar" class="jaar">
+                        <option value="1600-1699" selected>1600-1699</option>
+                        <option value="1700-1799">1700-1799</option>
+                        <option value="1800-1899">1800-1899</option>
+                        <option value="1900-1999">1900-1999</option>
+                    </optgroup>
+                    <hr />
+                    <optgroup label="Plaats van publicatie">
+                        <option value="London">London</option>
+                        <option value="Parijs">Parijs</option>
+                        <option value="Amsterdam">Amsterdam</option>
+                        <option value="Leipzig">Leipzig</option>
+                        <option value="Geneva">Geneva</option>
+                        <option value="Stuttgart">Stuttgart</option>
+                        <option value="Utrecht">Utrecht</option>
+                        <option value="Franeker">Franeker</option>
+                        <option value="Kassel">Kassel</option>
+                    </optgroup>
+                </select>
+
+                <search class="search">
+                <input type="search" placeholder="Search..">
+                <button type="submit">Search</button>
+                </search> 
+            </form>
+            
+            <section>
+            <!--<article>
+                    <img src="./assets/covers/Man's-blood-and-generation.jpg" alt="boek cover">
+                    <h2>Man's blood and generation</h2>
+                    <p>Westcott, William Wynn<br><br>n.d. [before 1925]<br><br>London</p>
+                    <a href="https://embassyofthefreemind.com/nl/collectie/online-catalogus/detail/2eed9eab-a3ae-4bf7-fdce-1674a934f674/media/14c70c7b-37cc-43ee-1132-31e5e1eaec7a?mode=detail&view=table&rows=1&page=1&fq[]=search_s_digitized_publication%3A%22Ja%22&sort=random%7B1759734429039%7D%20asc" class="meer">Meer</a>
+                </article>-->
+                <!--<article>
+                    <img src="./assets/covers/De-la-triple-vie-de-l'homme.png" alt="boek cover">
+                    <h2>De la triple vie de l'homme</h2>
+                    <p>Boehme, Jacob<br><br>1809<br><br>Parijs</p>
+                    <a href="https://embassyofthefreemind.com/nl/collectie/online-catalogus/detail/1645bbfa-9821-d77a-2b68-9222c48200c6/media/8fac7e18-2a85-4db5-eeb0-68b74f9eea45?mode=detail&view=table&rows=1&page=3&fq[]=search_s_digitized_publication%3A%22Ja%22&sort=random%7B1759734429039%7D%20asc" class="meer">Meer</a>
+                </article>-->
+                <article>
+                    <img src="./assets/covers/Eenige-philosophische-en-medicinale-tractaatjes.png" alt="boek cover">
+                    <h2>Eenige philosophische en medicinale tractaatjes</h2>
+                    <p>anonymous<br><br>1688<br><br>Amsterdam</p>
+                    <a href="https://embassyofthefreemind.com/nl/collectie/online-catalogus/detail/adde4ea4-0ae5-09fa-a774-1f3a0ac65bd9/media/ad820a89-f975-d916-844b-2d1c5eb69871?mode=detail&view=table&rows=1&page=4&fq[]=search_s_digitized_publication%3A%22Ja%22&sort=random%7B1759734429039%7D%20asc" class="meer">Meer</a>
+                </article>
+                <article>
+                    <img src="./assets/covers/Philosophia-nova-astronomiae-nostrae-particula-insignis.-Von-dem-Reich-der-Natur.png" alt="boek cover">
+                    <h2>Philosophia nova astronomiae nostrae particula insignis. Von dem Reich der Natur</h2>
+                    <p>Nagel, Paul<br><br>1621<br><br>Leipzig </p>
+                    <a href="https://embassyofthefreemind.com/nl/collectie/online-catalogus/detail/a927d4e0-7c54-7125-0543-5eccba294d9f/media/0eb9952c-5f74-416c-ee6b-c5a69805be00?mode=detail&view=table&rows=1&page=5&fq%5B%5D=search_s_digitized_publication:%22Ja%22&sort=random%7B1759734429039%7D%20asc" class="meer">Meer</a>
+                </article>
+                <article>
+                    <img src="./assets/covers/Censura-celebriorum-authorum.png" alt="boek cover">
+                    <h2>Censura celebriorum authorum</h2>
+                    <p>Blount, Thomas Pope<br><br>1696<br><br>Geneva</p>
+                    <a href="https://embassyofthefreemind.com/nl/collectie/online-catalogus/detail/62a4052d-2883-f2d7-d80f-b6eba01ee3f2/media/e77d5631-bb8e-960f-c919-9d4b0132d8d5?mode=detail&view=table&rows=1&page=6&fq%5B%5D=search_s_digitized_publication:%22Ja%22&sort=random%7B1759734429039%7D%20asc" class="meer">Meer</a>
+                </article>
+                <!--<article>
+                    <img src="./assets/covers/Litterarische-Nachrichten-zu-der-Geschichte-des-sogenannten-Goldmachens.png" alt="boek cover">
+                    <h2>Litterarische Nachrichten zu der Geschichte des sogenannten Goldmachens</h2>
+                    <p>Murr, Christoph Gottlieb von<br><br>1805<br><br>Leipzig</p>
+                    <a href="https://embassyofthefreemind.com/nl/collectie/online-catalogus/detail/1d2c7211-e90d-2b81-18fe-83c57c0373bc/media/4b48d06d-f034-3cd0-73da-df0e26b268e1?mode=detail&view=table&rows=1&page=7&fq%5B%5D=search_s_digitized_publication:%22Ja%22&sort=random%7B1759734429039%7D%20asc" class="meer">Meer</a>
+                </article>-->
+                <article>
+                    <img src="./assets/covers/De-signatura-rerum-das-ist-Bezeichnung-aller-dingen.png" alt="boek cover">
+                    <h2>De signatura rerum: das ist, Bezeichnung aller dingen</h2>
+                    <p>Boehme, Jacob<br><br>1635<br><br>Amsterdam</p>
+                    <a href="https://embassyofthefreemind.com/nl/collectie/online-catalogus/detail/6e6f88cd-45a8-abfa-fa8a-6952cbf0cf74/media/38e19915-112b-462d-2bca-e6ea2a18381d?mode=detail&view=table&rows=1&page=8&fq%5B%5D=search_s_digitized_publication:%22Ja%22&sort=random%7B1759734429039%7D%20asc" class="meer">Meer</a>
+                </article>
+                <!--<article>
+                    <img src="./assets/covers/Die-Wahrheit-des-sensus-communis.png" alt="boek cover">
+                    <h2>Die Wahrheit des sensus communis</h2>
+                    <p>Oetinger, Friedrich Christoph<br><br>1754<br><br>Stuttgart</p>
+                    <a href="https://embassyofthefreemind.com/nl/collectie/online-catalogus/detail/7bcbdfc0-6e93-1c59-3570-964df5247551/media/8b618fc3-835f-ea18-5afa-28c19b46101a?mode=detail&view=table&rows=1&page=9&fq%5B%5D=search_s_digitized_publication:%22Ja%22&sort=random%7B1759734429039%7D%20asc" class="meer">Meer</a>
+                </article>-->
+                <article>
+                    <img src="./assets/covers/Insignia-itinerarii-Italici-quibus-continentur-antiquitates-sacrae.png" alt="boek cover">
+                    <h2>Insignia itinerarii Italici, quibus continentur antiquitates sacrae</h2>
+                    <p>Tollius, Jacobus<br><br>1696<br><br>Utrecht</p>
+                    <a href="https://embassyofthefreemind.com/nl/collectie/online-catalogus/detail/7c1b5a5d-f4c1-2217-03b8-da3fb401922e/media/1ccc235f-1722-02e1-9164-e5e073959aa4?mode=detail&view=table&rows=1&page=10&fq%5B%5D=search_s_digitized_publication:%22Ja%22&sort=random%7B1759734429039%7D%20asc" class="meer">Meer</a>
+                </article>
+                <!--<article>
+                    <img src="./assets/covers/Alphabetum-ebraicum-vetus.png" alt="boek cover">
+                    <h2>Alphabetum ebraicum vetus</h2>
+                    <p>Drusius, Johannes<br><br>1587<br><br>Franeker</p>
+                    <a href="https://embassyofthefreemind.com/nl/collectie/online-catalogus/detail/c269c565-dc75-e690-310e-25a4095ba8ea/media/c77776ea-f767-d177-7dbf-9bc5ef41f39a?mode=detail&view=table&rows=1&page=11&fq%5B%5D=search_s_digitized_publication:%22Ja%22&sort=random%7B1759734429039%7D%20asc&filterAction" class="meer">Meer</a>
+                </article>-->
+                <article>
+                    <img src="./assets/covers/An-antidote-against-atheism.png" alt="boek cover">
+                    <h2>An antidote against atheism</h2>
+                    <p>More, Henry<br><br>1655<br><br>London</p>
+                    <a href="https://embassyofthefreemind.com/nl/collectie/online-catalogus/detail/7f6bc715-f9d5-035b-0d11-56e8f9e2452d/media/0d364fd8-49e5-3110-3778-2108801cb6de?mode=detail&view=table&rows=1&page=12&fq%5B%5D=search_s_digitized_publication:%22Ja%22&sort=random%7B1759734429039%7D%20asc&filterAction" class="meer">Meer</a>
+                </article>
+                <!--<article>
+                    <img src="./assets/covers/Fata-chymica-in-Beschreibung-der-wahren-und-falschen-Chymie.png" alt="boek cover">
+                    <h2>Fata chymica, in Beschreibung der wahren und falschen Chymie</h2>
+                    <p>Hortulanus, Fontanus<br><br>1740<br><br>Kassel</p>
+                    <a href="https://embassyofthefreemind.com/nl/collectie/online-catalogus/detail/93de4f5a-3f40-f490-68fd-3a1c299cc843/media/a7d8984a-1031-a091-8253-dc8ffaa04bbd?mode=detail&view=table&rows=1&page=14&fq%5B%5D=search_s_digitized_publication:%22Ja%22&sort=random%7B1759734429039%7D%20asc" class="meer">Meer</a>
+                </article>-->
+            </section>
+        </main>
+    </body>
+</html>

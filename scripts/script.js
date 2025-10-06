@@ -1,9 +1,10 @@
 // JS
-const jaarfilter = document.querySelector(".jaar");
+const filter = document.querySelector(".filter");
 
-jaarfilter.addEventListener("change", naarfiltered)
+filter.addEventListener("change", filtered);
 
-function naarfiltered(e) {
+function filtered(e) {
   // ga naar pagina
-  window.location.replace()
+  const form = e.target.parentNode;
+  form.submit()
 }
