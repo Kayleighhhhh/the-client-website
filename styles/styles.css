@@ -25,9 +25,12 @@ header {
     grid-template-columns: 1fr max-content 1fr;
     margin: 0 0 1em;
     border-radius: 10px;
+    
 
     h1{
         grid-column: 2;
+        margin:0;
+        height:0;
     }
 }
 
