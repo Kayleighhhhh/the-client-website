@@ -21,10 +21,60 @@ main {
 
 header {
     background-color: rgb(0, 38, 70);
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
     margin: 0 0 1em;
     border-radius: 10px;
+
+    h1{
+        grid-column: 2;
+    }
+}
+
+button {
+        position:relative;
+        z-index:10;
+        justify-self: end;
+        align-self: start;
+        margin: 15px;
+    }
+
+nav {
+    position:fixed;
+    inset: 0;
+    translate: 100%;
+    transition: 0.3s;
+    background-color: rgb(0, 38, 70);
+    padding: 6em 2em;
+
+    ul {
+        
+        color: white;
+        margin:0;
+        padding: 0;
+        list-style-type: "";
+
+        li {
+
+            a {
+            text-decoration: none;
+            color:white;
+            }
+        }
+        
+        
+    }
+
+}
+
+header.is-open {
+    button{
+        content:url("https://assets.codepen.io/274456/ui-icon-cross.svg")
+    }
+
+    nav {
+        translate:0;
+    }
 }
 
 
@@ -57,10 +107,12 @@ form {
         display: flex;
         border-radius: 5px;
         border-color: black;
+        flex-wrap: wrap;
         
         input {
             flex-grow: 1;
         }
+        
     }
 }
 
