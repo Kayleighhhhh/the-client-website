@@ -40,6 +40,9 @@ button {
         justify-self: end;
         align-self: start;
         margin: 15px;
+        padding:0; 
+        border: unset;
+        background: unset;
     }
 
 nav {
@@ -48,7 +51,17 @@ nav {
     translate: 100%;
     transition: 0.3s;
     background-color: rgb(0, 38, 70);
-    padding: 6em 2em;
+    padding: 4em 2em;
+
+    .home {
+        position: relative;
+        
+
+        img {
+            display:flex;
+            justify-self: end;
+        }
+    }
 
     ul {
         
