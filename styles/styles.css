@@ -151,13 +151,13 @@ section {
 
 article {
     --art-layout-lr:
-        "img heading  "
-        "img paragraaf"
-        "img button   ";
-    --art-layout-rl:
-        "heading   img"
-        "paragraaf img"
-        "button    img";
+        "img img "
+        "heading heading"
+        "paragraaf button";
+    /* --art-layout-rl:
+        "img img img"
+        "heading heading heading"
+        "paragraaf paragraaf button"; */
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -171,7 +171,7 @@ article {
     border-radius: 10px;
 
     &:nth-of-type(even) {
-        grid-template-areas:var(--art-layout-rl);
+        grid-template-areas:var(--art-layout-lr);
     }
 
     @media (min-width: 600px) {
@@ -182,7 +182,7 @@ article {
 
         &:nth-of-type(4n + 3),
         &:nth-of-type(4n + 4) {
-            grid-template-areas:var(--art-layout-rl);
+            grid-template-areas:var(--art-layout-lr);
         }
     }
 
@@ -196,7 +196,7 @@ article {
         &:nth-of-type(6n + 4),
         &:nth-of-type(6n + 5),
         &:nth-of-type(6n + 6) {
-            grid-template-areas:var(--art-layout-rl);
+            grid-template-areas:var(--art-layout-lr);
         }
     }
 
