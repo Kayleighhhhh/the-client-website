@@ -11,7 +11,7 @@
 body {
     margin:0;
     padding:1em;
-    background-image: url("/assets/efmbg1.png");
+    background-image: url("../assets/efmbg1.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center top;
@@ -102,7 +102,7 @@ nav {
 
 header.is-open {
     button{
-        content: url("/assets/x.svg");
+        content: url("../assets/x.svg");
         z-index: 11;
     }
 
