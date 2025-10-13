@@ -5,12 +5,17 @@
 
 /* #002646
 #BF9A5D
-#8FB8C9 */
+#8FB8C9  */
 
 
 body {
     margin:0;
     padding:1em;
+    background-image: url("/assets/efmbg1.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: cover;
 }
 
 main {
@@ -25,17 +30,23 @@ main {
 /**********/
 
 header {
-    background-color: rgb(0, 38, 70);
+    /* background-color: rgb(0, 38, 70); */
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     margin: 0 0 1em;
     border-radius: 10px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    box-shadow: 5px 5px 10px black;
+    height:max-content;
     
 
     h1{
         grid-column: 2;
         margin:0;
-        height:0;
+        img{
+            height: 80px;
+        }
     }
 }
 
@@ -57,6 +68,7 @@ nav {
     transition: 0.3s;
     background-color: rgb(0, 38, 70);
     padding: 4em 2em;
+    z-index: 10;
 
     .home {
         position: relative;
@@ -91,10 +103,12 @@ nav {
 header.is-open {
     button{
         content: url("/assets/x.svg");
+        z-index: 11;
     }
 
     nav {
         translate:0;
+        
     }
 }
 
@@ -111,9 +125,10 @@ form {
     padding: 5px;
     justify-content: center;
     gap:5px;
-    background-color: rgb(0, 38, 70);
+    /* background-color: rgb(0, 38, 70); */
     padding: 10px;
     border-radius: 10px;
+    flex-wrap: wrap;
 
 
     .filter {
@@ -126,12 +141,12 @@ form {
     .search {
         width:50%;
         display: flex;
-        border-radius: 5px;
         border-color: black;
-        flex-wrap: wrap;
+        
         
         input {
             flex-grow: 1;
+            border-radius: 5px;
         }
         
     }
@@ -170,10 +185,14 @@ article {
 
     grid-template-areas:var(--art-layout-lr);
 
-    background-color: rgb(0, 38, 70);
+    /* background-color: rgb(0, 38, 70); */
     column-gap:1em;
     padding: 10px;
     border-radius: 10px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    box-shadow: 5px 5px 10px black;
+    backdrop-filter: blur(4px);
 
     &:nth-of-type(even) {
         grid-template-areas:var(--art-layout-lr);
@@ -215,25 +234,30 @@ article {
     h2 {
         margin: 15px 0 0 10px;
         grid-area: heading;
-        color: white;
+        color: #BF9A5D;
+        text-shadow: 2px 2px 2px black;
     }
 
     p {
         margin: 0 0 0 10px;
         grid-area: paragraaf;
-        color: white;
+        color: #BF9A5D;
+        text-shadow: 2px 2px 2px black;
     }
 
     .meer {
         grid-area: button;
         justify-self:end;
         align-self: end;
-        border: solid white 2px;
+        border-top: solid white 1px;
+        border-left: solid white 1px;
+        box-shadow: 3px 3px 8px black;
         border-radius: 5px;
         width: fit-content;
         height: fit-content;
         padding:0.3em;
         text-decoration: none;
         color: white;
+        text-shadow: 2px 2px 2px black;
     }
 }
