@@ -142,7 +142,7 @@ form {
         width:50%;
         display: flex;
         border-color: black;
-        
+        flex-grow: 1;
         
         input {
             flex-grow: 1;
