@@ -2,7 +2,7 @@
 <html lang="nl">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="HTML, CSS, JavaScript, Embassy of the Free Mind, Catalog">
         <meta name="description" content="catalog voor Embassy of the free mind">
         <title>Catalog</title>
@@ -11,14 +11,16 @@
     </head>
     <body>
         <header>
-            <h1><img src="./assets/efmlogo2.png" class="logo" alt="logo Embassy of the free Mind"></h1>
-            <!-- <img src=""> -->
-            <button src="lijntjes" class="navbtn">
-                <img src="./assets/menu-2.svg">
+            <h1>
+                <img src="./assets/efmlogo2.png" class="logo" alt="logo Embassy of the free Mind">
+            </h1>
+           
+            <button class="navbtn">
+                <img src="./assets/menu-2.svg" alt="menu">
             </button>
             <nav>
                 <a href="index.html" class="home">
-                    <img src="./assets/home.svg">
+                    <img src="./assets/home.svg" alt="home">
                 </a>
                 <ul>
                     <li>
@@ -42,7 +44,8 @@
 
         <main>
             <form class="select" action="catalog.filtered.html">
-                <select name="Filter" class="filter">
+                <label for="filter"></label>
+                <select name="filter" class="filter">
                     <option value="">-Filter-</option>
                     <hr />
                     <optgroup label="Auteur">
@@ -82,7 +85,8 @@
                 </select>
 
                 <search class="search">
-                <input type="search" placeholder="Search..">
+                    <label for="search"></label>
+                    <input type="search" placeholder="Search..">
                 <!--<button type="submit">Search</button>-->
                 </search> 
             </form>
